@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 220 33% 96%;
+  --foreground: 238 31% 14%;
+  --card: 0 0% 100%;
+  --card-foreground: 238 31% 14%;
+  --primary: 243 100% 69%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 174 100% 92%;
+  --secondary-foreground: 238 31% 14%;
+  --muted: 228 27% 93%;
+  --muted-foreground: 215 16% 47%;
+  --accent: 347 100% 70%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --ring: 194 63% 38%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 10% 10%, rgb(108 99 255 / 0.16), transparent 28rem),
+    radial-gradient(circle at 92% 0%, rgb(255 101 132 / 0.16), transparent 30rem),
+    radial-gradient(circle at 55% 16%, rgb(0 212 170 / 0.12), transparent 26rem),
+    hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+.glass-panel {
+  background: rgb(255 255 255 / 0.72);
+  border: 1px solid rgb(255 255 255 / 0.7);
+  box-shadow: 0 24px 70px rgb(26 26 46 / 0.12);
+  backdrop-filter: blur(22px);
+}
+
+.brand-gradient {
+  background: linear-gradient(135deg, #6c63ff 0%, #ff6584 52%, #00d4aa 100%);
+}
+
+.text-brand-gradient {
+  background: linear-gradient(135deg, #6c63ff, #ff6584, #00d4aa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
